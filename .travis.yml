@@ -1,5 +1,4 @@
 language: c
-script: make -C Debug
 
 env:
   global:
@@ -17,5 +16,5 @@ addons:
       description: "<Your project description here>"
     notification_email: jeromeliang@hotmail.com
     build_command_prepend: "<Your build preprocessing command here>"
-    build_command: "<Your build command here>"
+    build_command: "make -C Debug"
     branch_pattern: coverity_scan
